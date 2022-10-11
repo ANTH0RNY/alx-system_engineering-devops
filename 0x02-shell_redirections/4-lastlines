@@ -1,0 +1,2 @@
+#!/bin/bsh
+cat /etc/passwd | tail -n 10
