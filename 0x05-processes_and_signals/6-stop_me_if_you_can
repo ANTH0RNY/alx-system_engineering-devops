@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# stop a bad bugger
+
+pkill -f 4-to_infinity_and_beyond

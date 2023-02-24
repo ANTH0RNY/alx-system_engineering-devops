@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# kills the bugger again
+
+pkill -f -SIGKILL 7-highlander
