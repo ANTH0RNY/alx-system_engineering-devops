@@ -1,8 +1,7 @@
-# creates a file in the tmp diirectory of 
-# the node 
+# creates a file in tmp
 
 file { 'holberton':
-  path    => '/tmp/holberton',
+  path    => '/tmp/school',
   mode    => '0744',
   owner   => 'www-data',
   group   => 'www-data',
