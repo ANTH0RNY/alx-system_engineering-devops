@@ -3,10 +3,14 @@
 """
 Exports to-do list information of all employees to JSON format.
 
-This script retrieves the to-do list information for all employees
-from a REST API and exports it to a JSON file.
+This module provides a script that retrieves the to-do list information
+for all employees from a REST API and exports it to a JSON file.
+
+Usage:
+    $ python3 export_to_json.py
 
 """
+
 
 import json
 import requests
