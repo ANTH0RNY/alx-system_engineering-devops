@@ -5,7 +5,7 @@ import requests
 
 def count_words(subreddit, word_list, after="", word_dic={}):
     """Return a list of titles of all hot articles"""
-    url = f"https://www.reddit.com/r/{subreddit}/hot.json"
+    url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
     headers = {'user-agent': 'MyAPI/0.0.1'}
     params = {'after': after}
 
@@ -34,6 +34,7 @@ def count_words(subreddit, word_list, after="", word_dic={}):
         return None
 
     try:
+
         data = js.get("data")
         after = data.get("after")
         children = data.get("children")
