@@ -7,8 +7,8 @@ def top_ten(subreddit):
     of the subreddit"""
     import requests
 
-    sub_info = requests.get(f"https://www.reddit.com/r/\
-                            {subreddit}/hot.json?limit=10",
+    sub_info = requests.get("https://www.reddit.com/r/{}/hot.json?limit=10"
+                            .format(subreddit),
                             headers={"User-Agent": "My-User-Agent"},
                             allow_redirects=False)
     if sub_info.status_code >= 300:
