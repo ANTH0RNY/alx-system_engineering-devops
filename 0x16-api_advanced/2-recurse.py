@@ -7,8 +7,8 @@ def recurse(subreddit, hot_list=[], count=0, after=None):
     of the subreddit"""
     import requests
 
-    sub_info = requests.get(f"https://www.reddit.com/r/\
-                            {subreddit}/hot.json",
+    sub_info = requests.get("https://www.reddit.com/r/{}/hot.json"
+                            .format(subreddit),
                             params={"count": count, "after": after},
                             headers={"User-Agent": "My-User-Agent"},
                             allow_redirects=False)
